@@ -23,3 +23,4 @@ arrVacio.push('Hola mundo');
 
 console.log(arrVacio); // Output: [6,'Hola mundo']
 
+

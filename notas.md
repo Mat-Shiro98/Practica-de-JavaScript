@@ -155,4 +155,61 @@ console.log(arrVacio); // Output: [6]
 
 
 
+OPERADORES DE COMPARACIÓN
+##Operador de igualdad ==:
+
+El operador de igualdad == compara dos valores para ver si son iguales, sin tener en cuenta sus tipos de datos. Si los valores son iguales, devuelve true; de lo contrario, devuelve false.
+
+console.log(5 == 5); // Output: true
+console.log("5" == 5); // Output: true (compara los valores pero no los tipos)
+console.log(10 == 5); // Output: false
+
+
+
+##Operador de igualdad estricta ===:
+El operador de igualdad estricta === compara dos valores y también verifica que sus tipos de datos sean iguales. Solo devuelve true si los valores y los tipos de datos son idénticos.
+
+console.log(5 === 5); // Output: true
+console.log("5" === 5); // Output: false (los tipos son diferentes)
+console.log(10 === 5); // Output: false
+
+
+##Operadores de <, >, >= , <=, !=,!==:
+
+console.log(5 < 2);
+console.log(5 > 2);
+console.log(5 <= 2);
+console.log(5 >= 2);
+console.log(5 !== '5'); 
+console.log(5 != 2);
+
+
+
+-OPERADORES LOGICOS-
+
+(or ||) , (and &&) ,(not !)
+
+Operador lógico AND (&&):
+
+Símbolo: &&
+Uso: Retorna true si ambas expresiones son verdaderas, de lo contrario, retorna false.
+Ejemplo: true && false devuelve false.
+Operador lógico OR (||):
+
+Símbolo: ||
+Uso: Retorna true si al menos una de las expresiones es verdadera, de lo contrario, retorna false.
+Ejemplo: true || false devuelve true.
+Operador lógico NOT (!):
+
+Símbolo: !
+Uso: Invierte el valor de una expresión. Si la expresión es verdadera, retorna false, y si es falsa, retorna true.
+Ejemplo: !true devuelve false.
+
+
+DATO:
+
+Por ejemplo cuando nuestro operador OR busca el primer elemento true y lo muestra en pantalla sea string o numero o objetos todo evalua en true menos el 0 ya que devuelve false
+
+const encadenar = false || false || true || 'Hola' || 'Mundo';
+console.log(encadenar); //(Muestra el 'Hola')
 

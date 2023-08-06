@@ -10,6 +10,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* Cambia el color del menú */
+    z-index: 100; /* Asegura que el menú esté encima del contenido */
+}
+
 nav {
     background-color: $primary-color;
     color: $link-color;

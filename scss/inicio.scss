@@ -1,0 +1,46 @@
+@import 'menu';
+
+#inicio {
+    height: 100vh;
+    /* Establece la altura para ocupar toda la pantalla */
+    background-image: url("/img/inicio.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+    height: 5rem;
+    margin-top: 3rem;
+}
+
+#muestras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 5rem;
+    text-align: center;
+    background-position: center;
+    max-width: 50%; /* Establecer un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    background-color: red;
+
+    .proyectos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: center;
+    
+        img {
+            max-width: 100%;
+            /* Ajustar el tamaño de las imágenes al ancho de las columnas */
+            height: auto;
+            /* Mantener la proporción original de la imagen */
+        }
+
+    }
+}

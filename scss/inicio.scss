@@ -1,5 +1,10 @@
 @import 'menu';
 
+main {
+    background-color: #d8ece9;
+}
+
+
 #inicio {
     height: 100vh;
     /* Establece la altura para ocupar toda la pantalla */
@@ -12,7 +17,7 @@
     color: #fff;
 }
 
-h2{
+h2 {
     text-align: center;
     height: 5rem;
     margin-top: 3rem;
@@ -25,16 +30,21 @@ h2{
     gap: 5rem;
     text-align: center;
     background-position: center;
-    max-width: 50%; /* Establecer un ancho máximo para el contenedor */
-    margin: 0 auto; /* Centrar el contenedor horizontalmente */
-    background-color: red;
+    max-width: 50%;
+    /* Establecer un ancho máximo para el contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor horizontalmente */
+    background-color: #e1be54;
+    padding: 10%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.747);
+
 
     .proyectos {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
         align-items: center;
-    
+
         img {
             max-width: 100%;
             /* Ajustar el tamaño de las imágenes al ancho de las columnas */
@@ -43,4 +53,133 @@ h2{
         }
 
     }
+}
+
+#barra_img_inicio {
+    margin-top: 5rem;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+#text_img {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+    justify-items: center;
+    gap: 5rem;
+    text-align: center;
+    background-position: center;
+    max-width: 50%;
+    /* Establecer un ancho máximo para el contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor horizontalmente */
+    background-color: $second-color;
+    padding: 10%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.747);
+
+
+    .ideas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+
+        img {
+            max-width: 80%;
+            /* Ajustar el tamaño de las imágenes al ancho de las columnas */
+            height: auto;
+            /* Mantener la proporción original de la imagen */
+        }
+
+        #texto_ideas {
+            color: white;
+        }
+
+    }
+}
+
+
+/*Para celular*/
+@media screen and (max-width: 768px) {
+
+
+    #muestras {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 5rem;
+        text-align: center;
+        background-position: center;
+        max-width: 50%;
+        /* Establecer un ancho máximo para el contenedor */
+        margin: 0 auto;
+        /* Centrar el contenedor horizontalmente */
+        background-color: #e1be54;
+        padding: 10%;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.747);
+
+
+        .proyectos {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            align-items: center;
+
+            img {
+                max-width: 100%;
+                /* Ajustar el tamaño de las imágenes al ancho de las columnas */
+                height: auto;
+                /* Mantener la proporción original de la imagen */
+            }
+
+        }
+    }
+
+    #barra_img_inicio {
+        margin-top: 5rem;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    #text_img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 5rem;
+        text-align: center;
+        background-position: center;
+        max-width: 50%;
+        /* Establecer un ancho máximo para el contenedor */
+        margin: 0 auto;
+        /* Centrar el contenedor horizontalmente */
+        background-color: $second-color;
+        padding: 10%;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.747);
+
+
+        .ideas {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            align-items: center;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                /* Ajustar el tamaño de las imágenes al ancho de las columnas */
+                height: auto;
+                /* Mantener la proporción original de la imagen */
+
+            }
+
+            #texto_ideas {
+                color: white;
+            }
+
+        }
+    }
+
 }

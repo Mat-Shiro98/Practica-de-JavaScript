@@ -15,7 +15,7 @@ header {
 }
 
 nav {
-  background-color: #333;
+  background-color: #192B42;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -35,22 +35,20 @@ nav .menu-toggle {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 .menu1 li {
-  margin-right: 20px;
-}
-.menu1 li:last-child {
-  margin-right: 0;
+  margin-right: 2rem;
 }
 .menu1 li a {
   color: #fff;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 2rem;
 }
 .menu1 li a:hover {
-  background-color: #555;
-  border-radius: 5px;
+  background-color: #0e6876;
+  font-weight: bold;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -71,7 +69,7 @@ nav .menu-toggle {
   }
   .menu-dropdown {
     display: none;
-    background-color: #333;
+    background-color: #192B42;
     position: absolute;
     top: 50px;
     left: 0;
@@ -85,6 +83,13 @@ nav .menu-toggle {
   .menu-dropdown li a {
     color: #fff;
   }
+}
+footer {
+  background-color: #192B42;
+  padding: 5%;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=menu.css.map */

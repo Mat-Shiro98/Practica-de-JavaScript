@@ -213,3 +213,89 @@ Por ejemplo cuando nuestro operador OR busca el primer elemento true y lo muestr
 const encadenar = false || false || true || 'Hola' || 'Mundo';
 console.log(encadenar); //(Muestra el 'Hola')
 
+
+-- Control de flujo WHILE --
+
+El bucle while es una estructura que permite repetir un bloque de código mientras una condición especificada sea verdadera. En cada iteración, se verifica la condición. Si es verdadera, el bloque de código se ejecuta; luego, la condición se verifica nuevamente y, si sigue siendo verdadera, el bloque se ejecuta nuevamente. Esto continúa hasta que la condición se vuelva falsa, momento en el que el bucle se detiene y el programa continúa con el siguiente código después del bucle.
+
+
+let contador = 0;
+
+while (contador < 5) {
+  console.log("Número: " + contador);
+  contador++;
+}
+
+
+-- switch --
+
+La declaración switch es una estructura de control que te permite evaluar una expresión y compararla con diferentes casos. Cada caso representa un valor posible que puede tener la expresión. Cuando se encuentra un caso que coincide con el valor de la expresión, se ejecuta el bloque de código asociado a ese caso. Si ningún caso coincide, se puede proporcionar un caso default que se ejecutará si no se encontró ninguna coincidencia.
+
+//En el switch se ingresa el valor ingresado
+switch(2){
+    case 1:{
+        console.log('Soy caso 1');
+        break;
+    }
+    case 2:{
+        console.log('Soy caso 2');
+        break;
+    }
+    case 3:{
+        console.log('Soy caso 3');
+        break;
+    }
+    default:
+        console.log('No existe caso');
+        break;
+}   
+
+
+--FOR--
+
+El bucle for es una estructura de control que te permite ejecutar un bloque de código repetidamente, un número específico de veces. Es especialmente útil cuando sabes cuántas veces deseas repetir una acción.
+
+for (inicialización; condición; incremento/decremento) {
+  // Código a repetir
+}
+
+Inicialización: Aquí, generalmente se declara una variable y se le asigna un valor inicial. Esto se ejecuta solo una vez antes de comenzar el bucle.
+
+Condición: Es una expresión que se verifica antes de cada iteración. Si la condición es verdadera, el bucle continúa; si es falsa, el bucle se detiene.
+
+Incremento/Decremento: Aquí, generalmente se aumenta o disminuye el valor de la variable declarada en la inicialización. Esto se ejecuta después de cada iteración.
+
+Aquí tienes un ejemplo de cómo usar un bucle for para imprimir los números del 1 al 5:
+
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+En este ejemplo:
+
+let i = 1 inicializa la variable i con el valor 1 antes de comenzar el bucle.
+i <= 5 es la condición. El bucle se ejecutará mientras i sea menor o igual a 5.
+i++ incrementa el valor de i en uno después de cada iteración.
+
+
+
+-- FUNCIONES --
+Una función en JavaScript es como una "caja" que contiene un conjunto de instrucciones o acciones. Puedes darle un nombre y luego usar ese nombre para "llamar" la función y ejecutar esas instrucciones. Las funciones te permiten reutilizar código y hacer que tu programa sea más organizado.
+
+// Definición de función
+function saludar(nombre) {
+  console.log("Hola, " + nombre + "!");
+}
+
+// Llamada de función
+saludar("Juan"); // Output: "Hola, Juan!"
+
+
+En este ejemplo:
+
+function saludar(nombre) define una función llamada saludar que toma un parámetro llamado nombre.
+
+Dentro de la función, console.log("Hola, " + nombre + "!"); es la acción que se ejecutará cuando la función sea llamada.
+saludar("Juan"); llama a la función saludar y pasa "Juan" como el valor para el parámetro nombre.
+
+Las funciones pueden realizar tareas más complejas y retornar valores, lo que te permite crear bloques de código reutilizables que pueden ser utilizados en diferentes partes de tu programa.

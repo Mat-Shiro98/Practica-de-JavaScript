@@ -26,7 +26,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.747);
 
     .menu-toggle{
         display: none;
@@ -54,7 +55,7 @@ nav {
             &:hover {
                 background-color: $link-hover-color;
                 font-weight: bold;
-                padding: 2rem;
+                padding: 1.5rem;
             }
         }
     }

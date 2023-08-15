@@ -1,0 +1,87 @@
+#contenedor_form {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10rem;
+    
+}
+
+#formulario {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    margin: auto;
+    padding: 2rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.747);
+
+    #datos_form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .datos{
+            background-color: #007bff;
+        }
+
+    .completar_form {
+        margin: 2rem;
+    }
+}
+
+    input {
+        margin-bottom: 10px;
+        border: none; /* Quita el borde */
+        background-color: rgb(138, 2, 2); /* Fondo transparente */
+        padding: 1rem; /* Agrega un poco de espacio interno */
+        border-bottom: 1px solid #410101; /* Agrega una línea inferior */
+    
+        &:focus{
+            outline: none; /* Quita el contorno en el enfoque */
+            border-bottom: 2px solid #007bff; 
+        }
+    }
+
+    #mensaje_text{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        #text_area{
+            margin: 1rem;
+            margin-top: 2rem;
+        }
+    
+        textarea {
+            margin: auto;
+            resize: none; /* Evita que se pueda redimensionar el textarea */
+            width: 30rem;
+            border: none; /* Quita el borde */
+            background-color: rgb(167, 112, 112); /* Fondo transparente */
+            padding: 1px; /* Agrega un poco de espacio interno */
+            border-bottom: 1px solid hsl(0, 100%, 93%); /* Agrega una línea inferior */
+        }
+    
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    
+    }
+    
+#info_contacto{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.747);
+}

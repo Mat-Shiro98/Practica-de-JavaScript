@@ -2,14 +2,23 @@
 
 console.log('Hola mundo');
 
-//Variables
-let mi_primera_var = ('Mi primera variable en js!');
-console.log(mi_primera_var);
-
-mi_primera_var = 'Esto a cambiado!';
-console.log(mi_primera_var);
+const sueldoBruto = 114500;
+const tasaInflacionMensual = 0.063; // 6.3% en decimal
+const tipoCambioDolar = 730;
+const costoDeVidaEnDolares = 1000; // Establece el costo de vida estimado en dólares
 
 
+// Calculamos el sueldo ajustado por inflación
+function calcularSueldoAjustado(sueldo, tasaInflacion) {
+  return sueldo * Math.pow(1 + tasaInflacion, 12); // Multiplicamos por 12 para ajustar a un año
+}
+
+const sueldoAjustado = calcularSueldoAjustado(sueldoBruto, tasaInflacionMensual);
+
+// Convertimos el costo de vida estimado de dólares a pesos
+const costoDeVidaEnPesos = costoDeVidaEnDolares * tipoCambioDolar;
+
+<<<<<<< HEAD
 //boolean
 let esMayorDeEdad = true;
 let tienePermiso = false;
@@ -109,3 +118,4 @@ function hacerPregunta() {
 
 console.log("Bienvenido al juego de preguntas y respuestas. Tienes 5 vidas.");
 hacerPregunta();
+// Verificamos si el sueldo ajustado es suficiente para cubrir el costo de vida

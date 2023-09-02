@@ -69,6 +69,9 @@ for (let i = 0; i < saboresHelado.length; i++) {
 
 */
 
+
+// Adivina el nuemro
+/* 
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -95,7 +98,7 @@ function hacerPregunta() {
                 console.log(`¡Respuesta correcta! ¡Has ganado! Te quedaste con ${vidas} vidas.`);
             } else {
                 vidas--;
-                console.log(`Respuesta incorrecta. Te quedan ${vidas} vidas.`);
+                console.log("Respuesta incorrecta. Te quedan " + vidas +" vidas.");
 
                 if (vidas === 0) {
                     console.log("Has perdido. ¡Mejor suerte la próxima!");
@@ -119,3 +122,64 @@ function hacerPregunta() {
 console.log("Bienvenido al juego de preguntas y respuestas. Tienes 5 vidas.");
 hacerPregunta();
 // Verificamos si el sueldo ajustado es suficiente para cubrir el costo de vida
+
+*/
+
+
+// Arreglos + for
+/*
+
+let numeros = [1,2,3,4,'hola'];
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log("Mis datos son: "+ numeros[i]);
+    console.log("Esta es la posición: " + i); 
+}
+
+*/
+
+
+//Funciones
+/*
+function saludarPersona(nombre) {
+    console.log(`¡Hola, ${nombre}!`);
+}
+
+saludarPersona("Juan"); // Saludará "¡Hola, Juan!"
+saludarPersona("María"); // Saludará "¡Hola, María!"
+
+*/
+
+const tareas = [];
+
+function agregarTarea(nombre) {
+    tareas.push({ nombre: nombre, completada: false });
+}
+
+function marcarComoCompletada(indice) {
+    tareas[indice].completada = true;
+}
+
+function eliminarTarea(indice) {
+    tareas.splice(indice, 1);
+}
+
+function mostrarTareas() {
+    console.log("Lista de tareas:");
+    for (let i = 0; i < tareas.length; i++) {
+        const tarea = tareas[i];
+        const estado = tarea.completada ? "Completada" : "Pendiente";
+        console.log(`${i + 1}. ${tarea.nombre} - ${estado}`);
+    }
+}
+
+// Ejemplo de flujo de usuario
+agregarTarea("Comprar víveres");
+agregarTarea("Hacer ejercicio");
+
+mostrarTareas();
+
+marcarComoCompletada(0);
+eliminarTarea(1);
+
+mostrarTareas();

@@ -112,6 +112,8 @@ switch (dia) {
 
 */
 
+/*
+
 function contador(a) {
 
     for (let i = a; i >= 0; i--) {
@@ -124,3 +126,7 @@ function contador(a) {
 
 }
 contador(50);
+
+*/
+
+

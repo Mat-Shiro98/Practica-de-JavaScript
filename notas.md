@@ -24,7 +24,7 @@ Para ejecutar el codigo .js tenemos que ir a la terminal y escribir (node js/tes
 
 Consideraciones adicionales:
 
-Cuando uses variables, se recomienda comenzar con const y cambiar a let solo si sabes que el valor de la variable cambiará en el futuro.
+>Cuando uses variables, se recomienda comenzar con const y cambiar a let solo si sabes que el valor de la variable cambiará en el futuro.
 
 Es una buena práctica reducir al mínimo el uso de var debido a su comportamiento de ámbito de función que puede llevar a errores difíciles de depurar.
 
@@ -79,62 +79,62 @@ En resumen:
 'undefined': se refiere a una variable que aún no ha sido inicializada o a la que no se le ha asignado un valor.
 
 
-#Objetos#
-Es una agrupación de datos.
+# Objetos
+>Es una agrupación de datos.
 
-Un objeto es como una caja donde puedes guardar diferentes cosas y cada cosa tiene un nombre. Cada una de esas cosas almacenadas en la caja es una propiedad del objeto, y su nombre es la clave que usas para acceder a esa cosa.
+>Un objeto es como una caja donde puedes guardar diferentes cosas y cada cosa tiene un nombre. Cada una de esas >cosas almacenadas en la caja es una propiedad del objeto, y su nombre es la clave que usas para acceder a esa >cosa.
 
-Por ejemplo, si queremos representar una persona en JavaScript, podríamos usar un objeto para almacenar información sobre esa persona, como su nombre, edad y profesión.
+>Por ejemplo, si queremos representar una persona en JavaScript, podríamos usar un objeto para almacenar información sobre esa persona, como su nombre, edad y profesión.
 
-// Definimos un objeto para representar una persona
-let persona = {
-  nombre: 'Juan',
-  edad: 30,
-  profesion: 'Ingeniero'
-};
+## Definimos un objeto para representar una persona
+    let persona = {
+      nombre: 'Juan',
+      edad: 30,
+      profesion: 'Ingeniero'
+    };
 
 En este caso, persona es nuestro objeto, y las propiedades que contiene son nombre, edad y profesion. Podemos acceder a cada propiedad utilizando su nombre clave:
 
-console.log(persona.nombre); // Output: "Juan"
-console.log(persona.edad); // Output: 30
-console.log(persona.profesion); // Output: "Ingeniero"
+    console.log(persona.nombre); // Output: "Juan"
+    console.log(persona.edad); // Output: 30
+    console.log(persona.profesion); // Output: "Ingeniero"
 
-Podemos agregar nuevas propiedades a nuestro objeto en cualquier momento:
+>Podemos agregar nuevas propiedades a nuestro objeto en cualquier momento:
 
-persona.ciudad = 'Ciudad Ejemplo';
-console.log(persona.ciudad); // Output: "Ciudad Ejemplo"
+    persona.ciudad = 'Ciudad Ejemplo';
+    console.log(persona.ciudad); // Output: "Ciudad Ejemplo"
 
-También podemos modificar el valor de una propiedad existente:
+>También podemos modificar el valor de una propiedad existente:
 
-persona.edad = 31;
-console.log(persona.edad); // Output: 31
-
-
-
-#Arreglos#
-Los arreglos son una colección ordenada de elementos. Piensa en ellos como una lista donde puedes almacenar diferentes valores, como números, cadenas de texto, objetos u otros arreglos. Cada elemento en el arreglo se guarda en una posición específica, conocida como índice.
-
-Aquí hay un ejemplo simple de un arreglo con algunos elementos:
-
-// Declaración de un arreglo
-const numeros = [1, 2, 3, 4, 5];
-
-En este caso, numeros es nuestro arreglo y contiene los valores del 1 al 5 en orden.
-Para acceder a los elementos de un arreglo, usamos su índice, que comienza desde 0. Por ejemplo:
-
-console.log(numeros[0]); // Output: 1
-console.log(numeros[2]); // Output: 3
+    persona.edad = 31;
+    console.log(persona.edad); // Output: 31
 
 
-También podemos modificar los elementos de un arreglo asignando nuevos valores a sus índices:
 
-numeros[1] = 10;
-console.log(numeros); // Output: [1, 10, 3, 4, 5]
+# Arreglos
+>Los arreglos son una colección ordenada de elementos. Piensa en ellos como una lista donde puedes almacenar diferentes valores, como números, cadenas de texto, objetos u otros arreglos. Cada elemento en el arreglo se guarda en una posición específica, conocida como índice.
 
-Podemos agregar nuevos elementos al final de un arreglo utilizando el método push():
+>Aquí hay un ejemplo simple de un arreglo con algunos elementos:
 
-numeros.push(6);
-console.log(numeros); // Output: [1, 10, 3, 4, 5, 6]
+## Declaración de un arreglo
+    const numeros = [1, 2, 3, 4, 5];
+
+>En este caso, numeros es nuestro arreglo y contiene los valores del 1 al 5 en orden.
+>Para acceder a los elementos de un arreglo, usamos su índice, que comienza desde 0. Por ejemplo:
+
+    console.log(numeros[0]); // Output: 1
+    console.log(numeros[2]); // Output: 3
+
+
+>También podemos modificar los elementos de un arreglo asignando nuevos valores a sus índices:
+
+    numeros[1] = 10;
+    console.log(numeros); // Output: [1, 10, 3, 4, 5]
+
+>Podemos agregar nuevos elementos al final de un arreglo utilizando el método push():
+
+    numeros.push(6);
+    console.log(numeros); // Output: [1, 10, 3, 4, 5, 6]
 
 
 Para saber la cantidad de elementos en un arreglo, podemos usar la propiedad length:

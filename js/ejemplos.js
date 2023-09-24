@@ -85,3 +85,4 @@ do {
 // MIENTRAS SE PULSE ACEPTAR EN EL MENSAJE EMERGENTE CONFIRM
 } while (confirm("Desea seguir?"));
 // SI SE PULSÓ CANCELAR IMPRIMIMOS EL RESULTADO document.write(resultado); 
+

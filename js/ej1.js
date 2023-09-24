@@ -129,4 +129,39 @@ contador(50);
 
 */
 
+/*
+
+let lista = [];
+
+function agregarElemento(elemento) {
+    lista.push(elemento);
+}
+
+agregarElemento('Hola');
+agregarElemento('Buenos días!');
+agregarElemento('Buenas Noches!');
+agregarElemento('Chau!');
+
+console.log(lista);
+console.log(lista[1]);
+
+*/
+/*
+
+function ejecutar(arg1){
+    for(i = 0; i < arg1.length; i++ ){
+        console.log(arg1[i]);
+    }
+}
+
+const num = [1,2,3,4,5];
+const nom = ['Pedro','Lucas','Juan','Messi'];
+
+ejecutar(num);
+ejecutar(nom);
+
+console.log(num);
+console.log(nom);
+
+*/
 

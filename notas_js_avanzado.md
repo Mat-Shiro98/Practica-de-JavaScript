@@ -198,4 +198,17 @@
 
 >> Output: "Hola, Juan!"
 
+>Otro Ejemplo con arreglos:
+
+    function ejecutar(arg1){
+        for(i = 0; i < arg1.length; i++ ){
+            console.log(arg1[i]);
+        }
+    }
+
+    const num = [1,2,3,4,5];
+    const nom = ['Pedro','Lucas','Juan','Messi'];
+
+    ejecutar(num);
+    ejecutar(nom);
 

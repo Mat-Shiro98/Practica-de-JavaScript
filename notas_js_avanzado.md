@@ -166,6 +166,7 @@
 >El bucle for interno se ejecuta completamente cada vez que el bucle for externo realiza una iteración. Esto significa que el for interno se reinicia desde el principio cada vez que el for externo avanza.
 
 >Ejemplo:
+
     for (let fila = 1; fila <= 3; fila++) {
     for (let columna = 1; columna <= 3; columna++) {
         console.log(`Fila ${fila}, Columna ${columna}`);
@@ -186,12 +187,15 @@
 >Una función en JavaScript es como una "caja" que contiene un conjunto de instrucciones o acciones. Puedes darle un nombre y luego usar ese nombre para "llamar" la función y ejecutar esas instrucciones. Las funciones te permiten reutilizar código y hacer que tu programa sea más organizado.
 
 >Ejemplo:
+
     function saludar(nombre) {
          console.log("Hola, " + nombre + "!");
     }
 
 > Llamada de función:
+
     saludar("Juan"); 
+
 >> Output: "Hola, Juan!"
 
 

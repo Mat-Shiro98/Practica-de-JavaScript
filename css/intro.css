@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #intro_inicio {
   display: block;
   font-family: monospace;
@@ -20,6 +21,18 @@
   50% {
     border-color: transparent;
   }
+}
+.letra-a {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 60px solid #000; /* Puedes ajustar el color aquí */
+  transform: rotate(45deg);
+  transform: rotate(-45deg);
+  transform-origin: center bottom;
+  margin-left: 100px;
 }
 
 /*# sourceMappingURL=intro.css.map */

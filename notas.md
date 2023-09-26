@@ -299,3 +299,34 @@ Dentro de la función, console.log("Hola, " + nombre + "!"); es la acción que s
 saludar("Juan"); llama a la función saludar y pasa "Juan" como el valor para el parámetro nombre.
 
 Las funciones pueden realizar tareas más complejas y retornar valores, lo que te permite crear bloques de código reutilizables que pueden ser utilizados en diferentes partes de tu programa.
+
+
+# Ejercicios
+
+¡Por supuesto! Aquí tienes algunos ejercicios de JavaScript con diferentes temas, desde básicos hasta un poco más avanzados:
+
+**Ejercicios de `if` y `else`**:
+
+1. **Verificación de número positivo o negativo**: Escribe un programa que solicite al usuario ingresar un número y luego muestre un mensaje que indique si el número es positivo, negativo o cero.
+
+2. **Determinar si un número es par o impar**: Crea un programa que pida al usuario ingresar un número y luego determine si es par o impar. Muestra un mensaje apropiado en función del resultado.
+
+**Ejercicios de bucles `for`**:
+
+3. **Suma de números pares**: Escribe un programa que calcule la suma de todos los números pares del 1 al 100 utilizando un bucle `for`.
+
+4. **Tablas de multiplicar**: Crea un programa que solicite al usuario ingresar un número y luego imprima la tabla de multiplicar correspondiente a ese número, desde 1 hasta 10.
+
+**Ejercicios de bucles `while` o `do...while`**:
+
+5. **Adivina el número**: Genera un número aleatorio entre 1 y 100. Luego, permite al usuario adivinar el número. Proporciona pistas como "demasiado alto" o "demasiado bajo" hasta que adivine el número correcto. Utiliza un bucle `while` para esto.
+
+6. **Suma de números hasta cierto límite**: Pide al usuario ingresar un número límite. Luego, utiliza un bucle `do...while` para sumar todos los números desde 1 hasta el número límite ingresado por el usuario.
+
+**Ejercicios de funciones**:
+
+7. **Cálculo de factorial**: Crea una función que calcule el factorial de un número. El factorial de un número entero no negativo `n` se define como el producto de todos los enteros positivos desde 1 hasta `n`.
+
+8. **Validación de contraseña**: Escribe una función que tome una contraseña como argumento y determine si es válida o no. Una contraseña válida debe tener al menos 8 caracteres, contener al menos una letra mayúscula y al menos un número.
+
+Estos ejercicios cubren varios conceptos básicos y un poco más avanzados de JavaScript, incluyendo el uso de `if` y `else`, bucles `for`, bucles `while` o `do...while`, y funciones. Puedes adaptarlos y modificarlos según tus necesidades para practicar y mejorar tus habilidades en JavaScript.

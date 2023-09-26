@@ -212,3 +212,6 @@
     ejecutar(num);
     ejecutar(nom);
 
+## Funciones de CallBack
+
+>

@@ -165,3 +165,12 @@ console.log(nom);
 
 */
 
+
+const num = parseInt(prompt("Ingresar numero para ver la tabla"));
+for(i=0; i <=10;i++){
+    for(j=num; i <= 10; j++){
+        let r = i*j;
+        console.log(i+"x"+j+"="+r);
+        break
+    }
+}

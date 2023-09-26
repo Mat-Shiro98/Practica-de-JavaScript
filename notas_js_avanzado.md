@@ -41,37 +41,87 @@
 
 >En este caso, numeros es nuestro arreglo y contiene los valores del 1 al 5 en orden.
 >Para acceder a los elementos de un arreglo, usamos su índice, que comienza desde 0. Por ejemplo:
-
+>Sintáxis:
     console.log(numeros[0]); // Output: 1
     console.log(numeros[2]); // Output: 3
 
 
 >También podemos modificar los elementos de un arreglo asignando nuevos valores a sus índices:
+>Sintáxis:
 
     numeros[1] = 10;
     console.log(numeros); // Output: [1, 10, 3, 4, 5]
 
+### .push()
 >Podemos agregar nuevos elementos al final de un arreglo utilizando el método push():
-
+>Sintáxis:
     numeros.push(6);
     console.log(numeros); // Output: [1, 10, 3, 4, 5, 6]
 
 
+### .length()
 >Para saber la cantidad de elementos en un arreglo, podemos usar la propiedad length:
-
+>Sintáxis:
     console.log(numeros.length); // Output: 6
 
+>También puedes cortar su longitud asignando un nuevo valor a la propiedad .length:
+>Sintáxis:
+    const frutas = ["manzana", "pera", "plátano", "fresa"]
+    frutas.length = 2
 
->Otro ejemplo con un arreglo vacio:
+    console.log(frutas) // ["manzana", "pera"]
+    console.log(frutas.length) // 2
 
-    const arrVacio = [];
 
+### .push()
 >Y con el método push() podemos ir agregando datos a ese arreglo:
-
+>Sintáxis:
     arrVacio.push(6);
     arrVacio.push('Hola mundo');
 
     console.log(arrVacio); // Output: [6]
+
+### .pop()
+>El método .pop() elimina y devuelve el último elemento de un array:
+>Sintáxis:
+    const frutas = ["plátano", "fresa", "naranja"]
+    const ultimaFruta = frutas.pop()
+
+    console.log(frutas) // ["plátano", "fresa"]
+    console.log(ultimaFruta) // "naranja"
+
+### .shift()
+>El método .shift() elimina y devuelve el primer elemento de un array. 
+>Sintáxis:
+    const frutas = ["plátano", "fresa", "naranja"]
+    const primeraFruta = frutas.shift()
+
+    console.log(frutas) // ["fresa", "naranja"]
+    console.log(primeraFruta) // "plátano"
+
+### .unshift()
+>El método .unshift() añade un elemento al principio de un array. Es lo mismo que .push(), pero con el primer elemento en lugar del último:
+>Sintáxis:
+    const frutas = ["plátano", "fresa", "naranja"]
+    frutas.unshift("manzana")
+
+    console.log(frutas) // ["manzana", "plátano", "fresa", "naranja"]
+
+### Vacio
+>Otro ejemplo con un arreglo vacio:
+
+    const arrVacio = [];
+
+## Concatenar 2 arrays
+
+### .concat()
+>Sintáxis:
+    const numbers = [1, 2, 3]
+    const numbers2 = [4, 5]
+
+    const allNumbers = numbers.concat(numbers2)
+    console.log(allNumbers) // [1, 2, 3, 4, 5]
+
 
 
 # While y do while

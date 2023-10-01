@@ -127,6 +127,18 @@
 >NO es lo mismo cuando devuelve una lista
 > salida: ["manzana","pera","naranja"]
 
+## .map()
+> Recorre todo los valores de la array y lo puede ejecutar en la function
+
+    const numeros = [1, 2, 3, 4, 5];
+
+> Usamos .map() para duplicar cada número en el arreglo
+    const duplicados = numeros.map(numero => numero * 2);
+
+    console.log(duplicados); // Esto mostrará [2, 4, 6, 8, 10] en la consola
+
+
+
 ## Concatenar 2 arrays
 
 ### .concat()

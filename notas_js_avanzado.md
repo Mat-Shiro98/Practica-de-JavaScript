@@ -112,6 +112,21 @@
 
     const arrVacio = [];
 
+## .filter() 
+> Toma una función como argumento y crea un nuevo array que contiene todos los elementos del array original (lista) que cumplen con una condición especificada por la función.
+
+## .join()
+> El método join toma un array y lo convierte en una cadena de texto, donde los elementos del array se unen en función del delimitador especificado. En el ejemplo que proporcioné, resultado.join(", ") toma el array resultado y lo convierte en una cadena de texto donde los elementos del array están separados por comas y espacios.
+
+    const frutas = ["manzana","pera","naranja"]
+
+    console.log(frutas.join());
+
+    >salida: manzana, pera, naranja
+
+>NO es lo mismo cuando devuelve una lista
+> salida: ["manzana","pera","naranja"]
+
 ## Concatenar 2 arrays
 
 ### .concat()
@@ -121,6 +136,7 @@
 
     const allNumbers = numbers.concat(numbers2)
     console.log(allNumbers) // [1, 2, 3, 4, 5]
+
 
 
 
@@ -264,4 +280,16 @@
 
 ## Funciones de CallBack
 
->
+>Un callback es una función que se pasa como argumento a otra función.
+>Permite ejecutar código en un momento específico, como después de completar una tarea
+
+    function sumar(a, b, callback) {
+    const resultado = a + b;
+    callback(resultado); // Llamamos al callback con el resultado
+    }
+
+    function mostrarResultado(resultado) {      // ----> ESTO ES UN CALLBACK
+        console.log("El resultado es:", resultado);
+    }
+
+    sumar(5, 3, mostrarResultado); // Llamamos a sumar con un callback para mostrar el resultado. (Esto es un ARGUMENTO)

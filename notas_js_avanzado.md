@@ -305,3 +305,38 @@
     }
 
     sumar(5, 3, mostrarResultado); // Llamamos a sumar con un callback para mostrar el resultado. (Esto es un ARGUMENTO)
+
+
+## Funcion Anonima
+
+>En el caso de utilizar una función anónima como callback, el resultado se pasa directamente como argumento a esa función anónima. Esto significa que no necesitas definir una función de callback por separado; puedes proporcionar una función anónima en el lugar donde se espera el callback y recibirás el resultado en esa función anónima.
+
+    function sumar(a, b, cb) {
+      const r = a + b;
+      cb(r);
+    }
+
+    sumar(2, 3, function(resultado) {
+        console.log("Resultado: " + resultado);
+    });
+
+-------------------------------------------------------------------------------------------
+
+# DOM
+
+>El DOM en JavaScript se estructura como un árbol, donde cada nodo del árbol representa un elemento en el documento, como etiquetas HTML, atributos, contenido de texto, etc. Puedes navegar por este árbol y realizar cambios en los elementos según sea necesario.
+
+## Conexión de HTML y JS
+
+>Para que esten vinculados tienes que colocar una etique llamada script 
+>Sintáxis:
+    <script src="../js/dom.js"></script> 
+>Con esto ya podemos escribir y mandar codigo JS al HTML
+
+## alerta
+>Sintáxis:
+    alert('Esto es una alerta');
+>Esto mostrara en la pantalla del chrome un cartel de alerta
+
+
+

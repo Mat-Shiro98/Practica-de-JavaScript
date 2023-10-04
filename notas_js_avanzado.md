@@ -338,5 +338,41 @@
     alert('Esto es una alerta');
 >Esto mostrara en la pantalla del chrome un cartel de alerta
 
+## console.log(..)
+>Sintáxis:
+    console.log('hola soy DOM');
+>Esto se mostrara en la consola de internet
+
+### NOTA:
+>Siempre el DOM se ejecuta al final del HTML por lo que el <script src="../js/dom.js"></script> Tiene que ir despues del </body>
+
+## getElementById 
+>Selecciona un elemento HTML específico como el atributo "id". 
+>Este metodo busca un elemento que tenga un atributo "id" coincida con el valor proporcionado y lo devuelve como un objeto.
+
+>Sintáxis JS:
+    const elemento = document.getElementById("idDelElemento");
+
+1. document se refiere al objeto raíz del DOM.
+    
+2. getElementById es el método que se utiliza para buscar el elemento por su id.
+
+3. "idDelElemento" es el valor del atributo "id" del elemento que deseas 
+
+>Cuando obtengas el elemnto pudes manupularlo, acceder a sus propiedades, cambiar su contenido, agregar eventos, etc.
+
+
+>Sintáxis HTML:
+    <div id="miElemento">Este es un elemento con ID</div>
+
+> Para cambiar su propieda esta este ejemplo:
+
+    const elemento = document.getElementById("miElemento");
+    elemento.textContent = "Nuevo contenido";
+
+>output: 
+>cambia su contenido de "Este es un elemento con ID" a "Nuevo contenido".
+
+## window.onload
 
 

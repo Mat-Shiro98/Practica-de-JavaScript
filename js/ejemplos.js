@@ -212,3 +212,92 @@ console.log("Total de impares: "+ imparTotal);
 
 */
 
+// CallBack
+/*
+
+function sumar(a, b, callback) {
+    const resultado = a + b;
+    callback(resultado); // Llamamos al callback con el resultado
+}
+
+function mostrarResultado(resultado) {
+    console.log("El resultado es:", resultado);
+}
+
+sumar(5, 3, mostrarResultado); // Llamamos a sumar con un callback para mostrar el resultado.
+*/
+
+/*
+Crea una función llamada calcular que tome dos números y una función de callback como argumentos.
+ La función calcular debe sumar los dos números y luego llamar al callback con el resultado.*/
+
+ /*
+function calcular (a,b,callback,callback2){
+    const resultado = a + b;
+    const resultado2 = a * b;
+
+    callback(resultado);
+    callback2(resultado2);
+}
+
+function mostrarMultiplicado(resultado2){
+    console.log("REsultado de la multiplicación: " + resultado2);
+}
+
+function mostrarResultado(resultado){
+    console.log("REsultado de la suma: " + resultado);
+}
+
+calcular(2,3,mostrarResultado,mostrarMultiplicado);
+
+*/
+
+
+/*
+Ejercicio de Callback en JavaScript
+
+Crea una función llamada filtrarPalabras que tome dos argumentos: 
+una matriz de palabras y una función de callback. 
+La función filtrarPalabras debe iterar a través de la matriz de palabras y 
+llamar al callback con cada palabra como argumento. 
+El callback debe decidir si la palabra debe mantenerse o descartarse.
+ Si el callback devuelve true, la palabra se mantiene en una nueva matriz de palabras; 
+ de lo contrario, se descarta. Al final, la función filtrarPalabras debe devolver 
+ la nueva matriz de palabras filtradas.
+
+Por ejemplo, podrías usar esta función para filtrar palabras ofensivas de una lista de comentarios en línea.
+*/
+/*
+const frutas = ["manzana", "plátano", "naranja"];
+
+for (i = 0; i < frutas.length; i++){
+    console.log("Fruta: "+ frutas[i]);
+}
+*/
+
+/*
+const frutas = ["manzana", "plátano", "naranja"];
+
+
+function mostrarPalabra(palabra,callback){
+    if(palabra === "manzana"){
+        console.log("Esto es una: "+ palabra);
+    }
+}
+
+mostrarPalabra(frutas[0]);
+
+*/
+
+/*
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const numerosPares = numeros.filter(numero => numero % 2 === 0);
+
+console.log(numerosPares);
+
+*/
+
+const numeros = [1, 2, 3, 4];
+const cuadrados = numeros.map(numero => numero * numero);
+console.log(cuadrados)

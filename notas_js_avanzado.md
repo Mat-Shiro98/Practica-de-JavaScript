@@ -123,6 +123,33 @@
 
     const arrVacio = [];
 
+## .filter() 
+> Toma una función como argumento y crea un nuevo array que contiene todos los elementos del array original (lista) que cumplen con una condición especificada por la función.
+
+## .join()
+> El método join toma un array y lo convierte en una cadena de texto, donde los elementos del array se unen en función del delimitador especificado. En el ejemplo que proporcioné, resultado.join(", ") toma el array resultado y lo convierte en una cadena de texto donde los elementos del array están separados por comas y espacios.
+
+    const frutas = ["manzana","pera","naranja"]
+
+    console.log(frutas.join());
+
+    >salida: manzana, pera, naranja
+
+>NO es lo mismo cuando devuelve una lista
+> salida: ["manzana","pera","naranja"]
+
+## .map()
+> Recorre todo los valores de la array y lo puede ejecutar en la function
+
+    const numeros = [1, 2, 3, 4, 5];
+
+> Usamos .map() para duplicar cada número en el arreglo
+    const duplicados = numeros.map(numero => numero * 2);
+
+    console.log(duplicados); // Esto mostrará [2, 4, 6, 8, 10] en la consola
+
+
+
 ## Concatenar 2 arrays
 
 ### .concat()
@@ -132,6 +159,7 @@
 
     const allNumbers = numbers.concat(numbers2)
     console.log(allNumbers) // [1, 2, 3, 4, 5]
+
 
 
 
@@ -275,4 +303,87 @@
 
 ## Funciones de CallBack
 
->
+>Un callback es una función que se pasa como argumento a otra función.
+>Permite ejecutar código en un momento específico, como después de completar una tarea
+
+    function sumar(a, b, callback) {
+    const resultado = a + b;
+    callback(resultado); // Llamamos al callback con el resultado
+    }
+
+    function mostrarResultado(resultado) {      // ----> ESTO ES UN CALLBACK
+        console.log("El resultado es:", resultado);
+    }
+
+    sumar(5, 3, mostrarResultado); // Llamamos a sumar con un callback para mostrar el resultado. (Esto es un ARGUMENTO)
+
+
+## Funcion Anonima
+
+>En el caso de utilizar una función anónima como callback, el resultado se pasa directamente como argumento a esa función anónima. Esto significa que no necesitas definir una función de callback por separado; puedes proporcionar una función anónima en el lugar donde se espera el callback y recibirás el resultado en esa función anónima.
+
+    function sumar(a, b, cb) {
+      const r = a + b;
+      cb(r);
+    }
+
+    sumar(2, 3, function(resultado) {
+        console.log("Resultado: " + resultado);
+    });
+
+-------------------------------------------------------------------------------------------
+
+# DOM
+
+>El DOM en JavaScript se estructura como un árbol, donde cada nodo del árbol representa un elemento en el documento, como etiquetas HTML, atributos, contenido de texto, etc. Puedes navegar por este árbol y realizar cambios en los elementos según sea necesario.
+
+## Conexión de HTML y JS
+
+>Para que esten vinculados tienes que colocar una etique llamada script 
+>Sintáxis:
+    <script src="../js/dom.js"></script> 
+>Con esto ya podemos escribir y mandar codigo JS al HTML
+
+## alerta
+>Sintáxis:
+    alert('Esto es una alerta');
+>Esto mostrara en la pantalla del chrome un cartel de alerta
+
+## console.log(..)
+>Sintáxis:
+    console.log('hola soy DOM');
+>Esto se mostrara en la consola de internet
+
+### NOTA:
+>Siempre el DOM se ejecuta al final del HTML por lo que el <script src="../js/dom.js"></script> Tiene que ir despues del </body>
+
+## getElementById 
+>Selecciona un elemento HTML específico como el atributo "id". 
+>Este metodo busca un elemento que tenga un atributo "id" coincida con el valor proporcionado y lo devuelve como un objeto.
+
+>Sintáxis JS:
+    const elemento = document.getElementById("idDelElemento");
+
+1. document se refiere al objeto raíz del DOM.
+    
+2. getElementById es el método que se utiliza para buscar el elemento por su id.
+
+3. "idDelElemento" es el valor del atributo "id" del elemento que deseas 
+
+>Cuando obtengas el elemnto pudes manupularlo, acceder a sus propiedades, cambiar su contenido, agregar eventos, etc.
+
+
+>Sintáxis HTML:
+    <div id="miElemento">Este es un elemento con ID</div>
+
+> Para cambiar su propieda esta este ejemplo:
+
+    const elemento = document.getElementById("miElemento");
+    elemento.textContent = "Nuevo contenido";
+
+>output: 
+>cambia su contenido de "Este es un elemento con ID" a "Nuevo contenido".
+
+## window.onload
+
+

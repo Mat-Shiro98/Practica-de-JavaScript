@@ -165,7 +165,7 @@ console.log(nom);
 
 */
 
-
+/*
 const num = parseInt(prompt("Ingresar numero para ver la tabla"));
 for(i=0; i <=10;i++){
     for(j=num; i <= 10; j++){
@@ -174,3 +174,56 @@ for(i=0; i <=10;i++){
         break
     }
 }
+*/
+/*
+function hacerAlgo(callback) {
+    setTimeout(function() {
+        console.log("La tarea asincrónica ha terminado");
+        callback(); // Llamamos al callback una vez que la tarea ha terminado
+    }, 2000); // Simulamos una operación que toma 2 segundos
+}
+
+function miCallback() {
+    console.log("El callback ha sido invocado");
+}
+
+hacerAlgo(miCallback);
+*/
+
+// Fat arrow function ( => )
+
+/*
+
+const otraFlecha = (a,b) => {
+    return a + b
+}
+const r = otraFlecha(1,2)
+console.log(r)
+
+
+const miFlecha = (f,h) => f + h
+console.log("Resupuesta de: " + miFlecha(2,3));
+
+
+
+function funcion(p,o){
+    const r = p - o
+    console.log(r)
+    return r
+}
+
+funcion(2,4)
+
+*/
+
+//Funcion anonima
+
+function sumar(a,b,cb){
+    const r = a + b
+    cb(r)
+}
+
+
+sumar(2,3, function(r){
+    console.log("Soy una funcion anonima y mi resultado es: ",r);
+})

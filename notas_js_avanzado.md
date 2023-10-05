@@ -1,5 +1,16 @@
+# INDICE
+* Diccionario
+* Arreglos
+* While
+* Switch
+* For
+* Funciones
+* Funciones Callback
 
-# Objetos
+
+
+
+# Objetos | Diccionario
 >Es una agrupación de datos.
 
 >Un objeto es como una caja donde puedes guardar diferentes cosas y cada cosa tiene un nombre. Cada una de esas >cosas almacenadas en la caja es una propiedad del objeto, y su nombre es la clave que usas para acceder a esa >cosa.

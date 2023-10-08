@@ -333,20 +333,20 @@
     <script src="../js/dom.js"></script> 
 >Con esto ya podemos escribir y mandar codigo JS al HTML
 
-## alerta
+# alerta
 >Sintáxis:
     alert('Esto es una alerta');
 >Esto mostrara en la pantalla del chrome un cartel de alerta
 
-## console.log(..)
+# console.log(..)
 >Sintáxis:
     console.log('hola soy DOM');
 >Esto se mostrara en la consola de internet
 
-### NOTA:
->Siempre el DOM se ejecuta al final del HTML por lo que el <script src="../js/dom.js"></script> Tiene que ir despues del </body>
+## NOTA:
+>Siempre el DOM se ejecuta al final del HTML por lo que el **<script src="../js/dom.js"></script>** Tiene que ir despues del **</body>**
 
-## getElementById 
+# getElementById 
 >Selecciona un elemento HTML específico como el atributo "id". 
 >Este metodo busca un elemento que tenga un atributo "id" coincida con el valor proporcionado y lo devuelve como un objeto.
 
@@ -355,11 +355,11 @@
 
 1. document se refiere al objeto raíz del DOM.
     
-2. getElementById es el método que se utiliza para buscar el elemento por su id.
+2. **getElementById** es el método que se utiliza para buscar el elemento por su id.
 
-3. "idDelElemento" es el valor del atributo "id" del elemento que deseas 
+3. **"idDelElemento"** es el valor del atributo "id" del elemento que deseas seleccionar del HTML
 
->Cuando obtengas el elemnto pudes manupularlo, acceder a sus propiedades, cambiar su contenido, agregar eventos, etc.
+>Cuando obtengas el elemnto pudes manipular, acceder a sus propiedades, cambiar su contenido, agregar eventos, etc.
 
 
 >Sintáxis HTML:
@@ -370,9 +370,51 @@
     const elemento = document.getElementById("miElemento");
     elemento.textContent = "Nuevo contenido";
 
->output: 
->cambia su contenido de "Este es un elemento con ID" a "Nuevo contenido".
+    > output: "Nuevo contenido"
 
-## window.onload
+
+# Propiedades de DOM 
+
+## .textContent
+>Usando la propiedad **.textContent** muestra o cambia su contenido de "Este es un elemento con ID" a "Nuevo contenido".
+> Esta propiedad muestra todo su contenido incluso su css.
+>Sintáxis HTML:
+    <div id="miElemento">Este es un elemento con ID</div>
+>Sintáxis JS:
+        const elemento = document.getElementById("miElemento");
+        elemento.textContent = "Nuevo contenido";
+
+        > output: "Nuevo contenido"
+
+## .innerText
+>Existe otra propiedad que se llama **.innerText y .innerHTML** que tambien puede mostrar o cambiar el elemento pero no muestra el contenido css si lo tiene, pero tiene una pequeña diferecia es que si queremos agregar codigo HTML a un elemento. El **.innerText** no nos va a servir pq nos lo imprime tal cual con el codigo HTML incluido pero si usamos el **.innerHTML** podemos agregar codigo HTML al elemento
+
+>Sintáxis HTML **.innerText**:
+    <div id="miElemento">Este es un elemento con ID</div>
+>Sintáxis JS:
+            const elemento = document.getElementById("miElemento");
+            console.log(elemnto.innerText);
+
+            > output: "Este es un elemento con ID"
+
+>Sintáxis HTML **.innerHTML**:
+    <div id="miElemento">Este es un elemento con ID</div>
+>Sintáxis JS:
+            const elemento = document.getElementById("miElemento");
+            elemnto.innerHTML = '<li>Elemento1</li> <li>Elemento2</li>'
+
+            > output:  • Elemento1
+                       • Elemento2
+
+                       
+# window.onload
+
+>El **windows.onload** espera hasta que la página se cargue por completo y despues ejecuta el codigo
+>Sintáxis:
+    windows.onload = () => {
+        const parrafo = document.getElementById('text')
+        console.log(parrafo.innerText)
+    }
+
 
 
